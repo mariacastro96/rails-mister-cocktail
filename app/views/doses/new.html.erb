@@ -1,0 +1,6 @@
+<%= simple_form_for [@cocktail, @dose] do |t| %>
+  <div class="form-group">
+  <%= t.label :description, 'Description' %>
+  <%= t.text_area :description, class: "form-control" %>
+  </div>
+<% end %>
