@@ -1,6 +1,12 @@
 <%= simple_form_for [@cocktail, @dose] do |t| %>
-  <div class="form-group">
+
+  <%= t.label :ingredient %>
+  <%= t.select :ingredient, get_ingredients %>
+  <br>
   <%= t.label :description, 'Description' %>
   <%= t.text_area :description, class: "form-control" %>
-  </div>
+  <br>
+  <%= t.submit class: "btn btn-primary" %>
+
 <% end %>
+
